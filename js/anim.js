@@ -1,7 +1,9 @@
-function start() 
-{
-	$("#logo").animate({height: '20vh'});
-	$("#header").animate({marginRight: '200vh', marginTop: '40vh'});
-}
+$( "#logo" ).one( "click", function() {
+ 	$("#header").animate({marginRight: '100%', marginTop: '35vh'});
+	$("#logo").css({height: '25vh'});
+});
 
-document.getElementById("logo").onclick=start;
+
+	
+
+
