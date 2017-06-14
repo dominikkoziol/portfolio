@@ -48,4 +48,49 @@ html
 	transition-duration: 500ms;
 }
 
+#logo:hover
+{
+	height: 62vh;
+}
 
+#menu-top
+{
+	display: none;
+	position: absolute; top:0; left:1vh;
+}
+
+#menu-top img
+{
+	height: 10vh;
+	filter: drop-shadow(0 0 10px #000);
+}
+
+#menu-top li
+{
+	margin: 20%;
+	padding: 10px;
+	border-bottom: 2px solid white;
+	width: 8vh;
+	list-style-type: none;
+}
+
+#menu-bottom
+{
+	display: none;
+	position: absolute; bottom:0; left:1vh;
+}
+
+#menu-bottom img
+{
+	height: 12vh;
+	filter: drop-shadow(0 0 10px #000);
+}
+
+#menu-bottom li
+{
+	margin: 20%;
+	padding: 10px;
+	border-bottom: 2px solid white;
+	width: 8vh;
+	list-style-type: none;
+}
