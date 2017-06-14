@@ -1,0 +1,56 @@
+* {margin: 0; padding: 0; transition-duration: 150ms;}
+
+@font-face
+{
+    font-family: 'Nexa';
+    src: url('../res/nexa.otf');
+}
+
+@font-face
+{
+    font-family: 'ubuntu';
+    src: url('../res/Ubuntu-C.ttf');
+}
+
+@font-face
+{
+    font-family: 'igiari';
+    src: url('../res/igiari.ttf');
+}
+
+html
+{
+    background-image: url("../img/background.jpg");
+    background-size: 100% 100%;
+    font-family: Tahoma;
+    color: white;
+    height: 100vh;
+}
+
+#header
+{
+	text-align: center;
+	margin-top: 20vh;
+	transition-duration: 500ms;
+}
+
+#header ul
+{
+	list-style-type: none;
+}
+
+#logo
+{
+	height: 60vh;
+  	filter: drop-shadow(0 0 10px #000);
+          	-webkit-animation: swing-in-bottom-bck 0.6s ease-in-out both;
+	                animation: swing-in-bottom-bck 0.6s ease-in-out both;
+	transition-duration: 500ms;
+}
+
+#logo:hover
+{
+  height: 62vh;
+  cursor: pointer;
+}
+
