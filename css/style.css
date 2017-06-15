@@ -24,13 +24,20 @@ html
     background-size: 100% 100%;
     font-family: Tahoma;
     color: white;
-    height: 100vh;
+    
+}
+
+body
+{
+	box-sizing: border-box;
+	width: 100%;
+	height: 100vh;
 }
 
 #header
 {
 	text-align: center;
-	margin-top: 20vh;
+	padding-top: 20vh;
 	transition-duration: 500ms;
 }
 
@@ -46,6 +53,7 @@ html
           	-webkit-animation: swing-in-bottom-bck 0.6s ease-in-out both;
 	                animation: swing-in-bottom-bck 0.6s ease-in-out both;
 	transition-duration: 500ms;
+	cursor: pointer;
 }
 
 #logo:hover
@@ -56,7 +64,7 @@ html
 #menu-top
 {
 	display: none;
-	position: absolute; top:0; left:1vh;
+	position: absolute; top:0; left:2vh;
 }
 
 #menu-top img
@@ -68,16 +76,17 @@ html
 #menu-top li
 {
 	margin: 20%;
-	padding: 10px;
+	padding: 10px 15px;
 	border-bottom: 2px solid white;
 	width: 8vh;
 	list-style-type: none;
+	cursor: pointer;
 }
 
 #menu-bottom
 {
 	display: none;
-	position: absolute; bottom:0; left:1vh;
+	position: absolute; bottom:0; left:2vh;
 }
 
 #menu-bottom img
@@ -89,8 +98,50 @@ html
 #menu-bottom li
 {
 	margin: 20%;
-	padding: 10px;
+	padding: 10px 15px;
 	border-bottom: 2px solid white;
 	width: 8vh;
 	list-style-type: none;
+	cursor: pointer;
+}
+
+#window
+{
+	box-sizing: border-box;
+	position: absolute; left:25vh; top:0;
+	width:50%;
+	height: 75%;
+	z-index: 4;
+	border-radius: 10px 10px 0 0;
+	display: none;
+	
+}
+
+#window nav
+{
+	box-sizing: border-box;
+	width: 100%;
+	height: 26px;
+	border: 4px solid #464541;
+	background-color: #464541;
+	border-radius: 10px 10px 0 0;
+	cursor: move;
+}
+
+nav img
+{
+	cursor: pointer;
+	height: 100%;
+}
+
+#content
+{
+	box-sizing: border-box;
+	background-color: #FFFFFF;
+	height: 98%;
+}
+
+#protect
+{
+	position: absolute; top:0;bottom:20px;right:3px;left: 10%;
 }
