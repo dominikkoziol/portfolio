@@ -3,43 +3,59 @@
     <head>
         <meta charset="utf-8">
         <meta name="robots" content="all">
-        <meta name="copyright" content="faljak">
+        <meta name="copyright" content="kozido">
         <title>k o z i o l</title>
-		    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/rwd.css">
         <link rel="stylesheet" type="text/css" href="css/webkit.css">
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <link rel="stylesheet" href="css/jquery-ui.css">
         <link rel="shortcut icon" href="img/favicon.png" />
     </head>
     <body>
     <div id="protect"></div>
-    <ul id="menu-top">
-    	<li id="about"><img src="img/contact.png" alt="contact"></li>
-    	<li><img src="img/contact.png" alt="contact"></li>
-    </ul>
     <header id="header">
-    	<img id="logo" src="img/skull.png"/>
+      <img id="logo" src="img/skull.png"/>
     </header>
-    <ul id="menu-bottom">
-    	<li><img src="img/contact.png" alt="contact"></li>
-    	<li id="contact"><img src="img/contact.png" alt="contact"></li>
-    </ul>    
-     	
+    <ul class="menu">
+      <hr />
+    	<li id="about"><img src="img/contact.png" alt="contact"><p>O mnie</p></li><hr />
+    	<li><img src="img/mail.png" alt="contact"><p>Kontakt</p></li><hr />
+    	<li><a href="https://github.com/dominikkoziol" target="blank"><img src="img/git.png" alt="contact"><p>Github</p></li></a><hr />
+    	<li id="contact"><img src="img/projects.png" alt="contact"><p>Projekty</p></li><hr />
+    </ul>
+
     <div id="window">
-      	<nav><img id="close" src="img/cross.png" alt="cross"></nav>
-      	<div id="content">pasek</div>
+      	<nav><img id="close" src="img/cross.png" alt="cross" ><span>O mnie</span></nav>
+      	<div id="content">
+        <table>
+          <tr>
+            <td id="first">
+              <img src="img/me.jpg" alt="me">
+              <span> Zdjęcie konta </span>
+            </td>
+                <td id="second">
+              <ul>
+                  <li> Imię i nazwisko: Dominik Kozioł </li>
+                  <li> Wiek: 20 </li>
+                  <li> Typ konta: Junior Front-End Developer </li>
+                  <li> Języki:
+                  <ol>
+                    <li> Polski - ojczysty </li>
+                    <li> Angielski - komunikatywny </li>
+                    <li> Niemiecki - podstawowy </li>
+                  </ol>
+              </ul>
+            </td>
+          </tr>
+        </table>
+
+
+      	</div>
     </div>
-         
-         
-    <script type="text/javascript" src="js/draggable.js"></script>
-    <script type="text/javascript" src="js/anim.js"></script>
-    <script type="text/javascript" src="js/showWindow.js"></script>
-    <script type="text/javascript" src="js/resizable.js"></script>
-    
+
+
+    <script type="text/javascript" src="js/script.js"></script>
 
     </body>
 </html>
