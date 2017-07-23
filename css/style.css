@@ -152,24 +152,6 @@ nav img
 {
   display: block;
 }
-#protect
-{
-	position: absolute; top:0;bottom:20px;right:3px;left: 10%;
-}
-
-/*
-#partFirst
-{
-  float:left;
-  text-align: center;
-}
-
-#partSecond
-{
-  float:right;
-  text-align: center;
-}
-*/
 
 table
 {
