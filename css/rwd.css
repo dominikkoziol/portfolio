@@ -1,9 +1,16 @@
-@media(max-width: 1024px)
+@media(max-width: 1155px)
 {
 	#window
 	{
-		width:80%;
-		left:10%;
+		width:90%;
+		left:5%;
+		display: none;
+		height: 500px;
+	}
+	
+	#window nav
+	{
+		display: inline-block;
 	}
 }
 
@@ -13,7 +20,22 @@
 	{
 		top:1%;left: 1%;
 		width: 98%;
-
+	}
+	
+	#content
+	{
+		margin:0;
+	}
+	
+	nav
+	{
+		margin:0;
+		padding:0;
+		position: sticky;
+	}
+	table
+	{
+		margin: 0 0 0 0;
 	}
 	
 	#first
@@ -24,34 +46,31 @@
 	
 	#second
 	{
-		display: inline-block;
+		display: block;
 		font-size: 100%;
 		box-sizing: border-box;
 		display: block;
 		float: none;
 		width: 100%;
-		position: relative;
 	}
 	
 	nav
 	{
-		height:45px;
-		margin: 0;
+	 	margin: 0;
 	}
 	
 }
 
-@media(max-width: 479px)
+@media(max-width: 480px)
 {
 	#window
-	{
-		top:1%; left:1%;
-		width: 98%;
-		height: 102%;
+	{	
+		top:0; left:0;
+		width: 100%;
+		height: 95%;
 	}
 	#second
 	{
-		font-size: 80%;
+		font-size: 90%;
 	}
-
 }
