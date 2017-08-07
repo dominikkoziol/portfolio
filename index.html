@@ -5,11 +5,11 @@
         <meta name="robots" content="all">
         <meta name="copyright" content="kozido">
         <title>k o z i o l</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		    <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/rwd.css">
         <link rel="stylesheet" type="text/css" href="css/webkit.css">
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <link rel="shortcut icon" href="img/favicon.png" />
     </head>
     <body>
@@ -19,7 +19,7 @@
     <ul class="menu">
       <hr />
     	<li id="about"><img src="img/contact.png" alt="contact"><p>O mnie</p></li><hr />
-    	<li><img src="img/mail.png" alt="contact"><p>Kontakt</p></li><hr />
+    	<li id="contact"><img src="img/mail.png" alt="contact"><p>Kontakt</p></li><hr />
     	<li><a href="https://github.com/dominikkoziol" target="blank"><img src="img/git.png" alt="contact"><p>Github</p></a></li><hr />
     	<li id="contact"><img src="img/projects.png" alt="contact"><p>Projekty</p></li><hr />
     </ul>
@@ -28,30 +28,46 @@
       	<nav><img id="close" src="img/cross.png" alt="cross" ><span>O mnie</span></nav>
       	<div id="content">
             <div id="first">
-              <div id="accountField">
-         		<div id="showInfo">
-                    <img src="img/me.jpg" alt="ja">
-                    <ul id="userName">
-                      <li> Dominik Kozioł </li>
-                      <li id="secondly"> Junior Front End Developer </li>
-                    </ul>
+         		  <div id="showInfo">
+                <img src="img/me.jpg" alt="ja">
+                <p>Dominik Kozioł <span>Junior Front End Developer</span></p>
                 </div>
-              </div>
-				<a href="res/Dominik_Koziol_CV.pdf" target="_blank"><button class="cv">Pokaż CV</button></a>
-				<a href="res/Dominik_Koziol_CV.pdf" download><button class="cv">Pobierz CV</button></a>
             </div>
             <div id="second">
-              	<table border="0" cellpadding="0" cellspacing="0">
-					<tr><td class="left"><img src="img/me.jpg"></td><td class="right left">Dominik Kozioł</td></tr>
-					<tr><td class="left">Typ konta:</td><td class="right">Junior front-end developer</td></tr>
-					<tr><td class="left">Wiek:</td><td class="right">20</td></tr>
-					<tr><td class="left">Umiejętności:</td><td class="right">HTML5, CSS3, JS, JQuery, SASS, Bootstrap</td></tr>
-					<tr><td class="left">Języki:</td><td class="right">Angielski - na poziomie komunikatywnym, Niemiecki na poziomie podstawowym</td></tr>
-					<tr><td class="left">Opis:</td><td class="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies pulvinar augue, eu tristique erat elementum quis. Morbi vitae libero vitae nibh aliquet mollis vel molestie felis. Donec tellus lorem, sodales sit amet risus non, finibus ornare tortor.</td></tr>
-				</table>
+              <img src="img/me.jpg" alt="ja">
+              <table>
+      					<tr class="mainRow"><td class="left">Nazwisko:</td><td class="right">Dominik Kozioł</td></tr>
+      					<tr><td class="left">Typ konta:</td><td class="right">Junior front-end developer</td></tr>
+      					<tr><td class="left">Wiek:</td><td class="right">20</td></tr>
+      					<tr><td class="left">Umiejętności:</td><td class="right">HTML5, CSS3, JS, JQuery, SASS, Bootstrap</td></tr>
+      					<tr><td class="left">Języki:</td><td class="right">Angielski - na poziomie komunikatywnym, Niemiecki na poziomie podstawowym</td></tr>
+      					<tr><td class="left">Opis:</td><td class="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies pulvinar augue, eu tristique erat elementum quis. Morbi vitae libero vitae nibh aliquet mollis vel molestie felis. Donec tellus lorem, sodales sit amet risus non, finibus ornare tortor.</td></tr>
+      				</table>
             </div>
+            <footer>
+              <a href="res/Dominik_Koziol_CV.pdf" target="_blank"><button>Pokaż CV</button></a>
+      				<a href="res/Dominik_Koziol_CV.pdf" download><button>Pobierz CV</button></a>
+            </footer>
         </div>
       	</div>
+
+        <div id="window1">
+          	<nav><img id="close1" src="img/cross.png" alt="cross" ><span>Kontakt</span></nav>
+          	<div id="content">
+                <div id="mail">
+                  <img src="img/circle.png" alt="mail">
+                  <p>dkoziol@interia.com</p>
+                </div>
+                <div id="phone">
+                  <img src="img/social.png" alt="mail">
+                  <p>534-954-321</p>
+                </div>
+                <div id="linked">
+                  <img src="img/link.png" alt="mail">
+                  <a href="https://www.linkedin.com/in/dominik-kozio%C5%82-5a2426148/"><p> LinkedIn </p></a>
+                </div>
+            </div>
+        </div>
 
     <script type="text/javascript" src="js/script.js"></script>
     </body>

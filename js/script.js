@@ -2,16 +2,18 @@ $("#about").click( function(){
 	$("#window").show(0);
 });
 
+$("#contact").click( function(){
+	$("#window1").show(0);
+});
+
 $("#close").click( function(){
 	$("#window").hide(0);
 });
 
-$("#showInfo").click( function(){
-	$("#second").show(0);
-	$("#showInfo").css({backgroundColor: '#E95420'});
-	$("#userName").css({color: 'white'});
-	$("#secondly").css({color: 'whitesmoke'});
+$("#close1").click( function(){
+	$("#window1").hide(0);
 });
+
 
 document.onkeydown = function(evt)
 {
