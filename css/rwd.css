@@ -54,6 +54,10 @@
     margin-left: 0;
   }
 
+  #content1 div
+  {
+    padding-top: 2%;
+  }
 }
 
 @media(max-width: 480px)
