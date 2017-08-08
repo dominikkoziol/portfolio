@@ -24,9 +24,9 @@
     	<li id="contact"><img src="img/projects.png" alt="contact"><p>Projekty</p></li><hr />
     </ul>
 
-    <div id="window">
-      	<nav><img id="close" src="img/cross.png" alt="cross" ><span>O mnie</span></nav>
-      	<div id="content">
+    <div class="window">
+      	<nav><img class="close" src="img/cross.png" alt="cross" ><span>O mnie</span></nav>
+      	<div id="content" class="content">
             <div id="first">
          		  <div id="showInfo">
                 <img src="img/me.jpg" alt="ja">
@@ -51,21 +51,28 @@
         </div>
       	</div>
 
-        <div id="window1">
-          	<nav><img id="close1" src="img/cross.png" alt="cross" ><span>Kontakt</span></nav>
-          	<div id="content">
+        <div class="show window">
+          	<nav><img class="close" src="img/cross.png" alt="cross" ><span>Kontakt</span></nav>
+          	<div id="content1" class="content">
                 <div id="mail">
-                  <img src="img/circle.png" alt="mail">
-                  <p>dkoziol@interia.com</p>
+                  <a href="mailto:dkoziol@interia.com">
+                    <img src="img/circle.png" alt="mail" id="mailImg">
+                    <p>dkoziol@interia.com</p>
+                  </a>
                 </div>
                 <div id="phone">
-                  <img src="img/social.png" alt="mail">
-                  <p>534-954-321</p>
+                  <a href="tel:+48534954321">
+                    <img src="img/social.png" alt="mail" id="phoneImg">
+                    <p>534-954-321</p>
+                  </a>
                 </div>
                 <div id="linked">
-                  <img src="img/link.png" alt="mail">
-                  <a href="https://www.linkedin.com/in/dominik-kozio%C5%82-5a2426148/"><p> LinkedIn </p></a>
+                  <a href="https://www.linkedin.com/in/dominik-kozio%C5%82-5a2426148/" target="_blank">
+                    <img src="img/link.png" alt="mail" id="linkedImg">
+                    <p> LinkedIn </p>
+                  </a>
                 </div>
+
             </div>
         </div>
 

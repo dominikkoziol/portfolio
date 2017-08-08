@@ -1,25 +1,101 @@
-$("#about").click( function(){
-	$("#window").show(0);
-});
+var about=document.getElementById('about');
+var contact=document.getElementById('contact');
+var close=document.getElementsByClassName('close');
+var mail=document.getElementById('mail');
+var phone=document.getElementById('phone');
+var linked=document.getElementById('linked');
 
-$("#contact").click( function(){
-	$("#window1").show(0);
-});
+about.onclick=showAbout;
+contact.onclick=showContact;
+close[0].onclick=hideAbout;
+close[1].onclick=hideContact;
+mail.onmouseover=changeMail;
+mail.onmouseout=returnMail;
+phone.onmouseover=changePhone;
+phone.onmouseout=returnPhone;
+linked.onmouseover=changeLinked;
+linked.onmouseout=returnLinked;
 
-$("#close").click( function(){
-	$("#window").hide(0);
-});
 
-$("#close1").click( function(){
-	$("#window1").hide(0);
-});
+function showAbout()
+{
+	var window=document.getElementsByClassName('window');
+	window[0].style.display="block";
+}
 
+function showContact()
+{
+	var window=document.getElementsByClassName('window');
+	window[1].style.display="block";
+}
+
+function hideAbout()
+{
+	var window=document.getElementsByClassName('window');
+	window[0].style.display="none";
+}
+
+function hideContact()
+{
+	var window=document.getElementsByClassName('window');
+	window[1].style.display="none";
+}
+
+function changeMail()
+{
+	var mail=document.getElementById('mailImg');
+	var mail1=document.getElementById('mail');
+	mail.style.transform="scale(1.05)";
+	mail1.style.backgroundColor="#E95420";
+}
+
+function returnMail()
+{
+	var mail=document.getElementById('mailImg');
+	var mail1=document.getElementById('mail');
+	mail.style.transform="scale(1)";
+	mail1.style.backgroundColor="#F2F1F0";
+}
+
+function changePhone()
+{
+	var phone=document.getElementById('phoneImg');
+	var phone1=document.getElementById('phone');
+	phone.style.transform="scale(1.05)";
+	phone1.style.backgroundColor="#E95420";
+}
+
+function returnPhone()
+{
+	var phone=document.getElementById('phoneImg');
+	var phone1=document.getElementById('phone');
+	phone.style.transform="scale(1)";
+	phone1.style.backgroundColor="#F2F1F0";
+}
+
+function changeLinked()
+{
+	var linked=document.getElementById('linkedImg');
+	var linked1=document.getElementById('linked');
+	linked.style.transform="scale(1.05)";
+	linked1.style.backgroundColor="#E95420";
+}
+
+function returnLinked()
+{
+	var linked=document.getElementById('linkedImg');
+	var linked1=document.getElementById('linked');
+	linked.style.transform="scale(1)";
+	linked1.style.backgroundColor="#F2F1F0";
+}
 
 document.onkeydown = function(evt)
 {
+		var window = document.getElementsByClassName('window');
     evt = evt || window.event;
     if (evt.keyCode == 27) {
-        document.getElementById('window').style.display="none";
+        window[0].style.display="none";
+				window[1].style.display="none";
     }
 };
 
