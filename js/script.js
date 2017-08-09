@@ -1,131 +1,116 @@
-var about=document.getElementById('about');
-var contact=document.getElementById('contact');
-var projects=document.getElementById('projects');
+var windows=document.getElementsByClassName('window');
 var close=document.getElementsByClassName('close');
-var mail=document.getElementById('mail');
-var phone=document.getElementById('phone');
-var linked=document.getElementById('linked');
 
-var game=document.getElementById("game");
-game.onclick=showHungry;
+{
+	document.onkeydown = function(evt)
+	{
+	    evt = evt || windows.event;
+	    if (evt.keyCode == 27) {
+	        windows[0].style.display="none";
+					windows[1].style.display="none";
+					windows[2].style.display="none";
+	    }
+	};
+}
 
+//About windows
+var about=document.getElementById('about');
 about.onclick=showAbout;
-contact.onclick=showContact;
-projects.onclick=showProjects;
 close[0].onclick=hideAbout;
-close[1].onclick=hideContact;
-close[2].onclick=hideProjects;
-mail.onmouseover=changeMail;
-mail.onmouseout=returnMail;
-phone.onmouseover=changePhone;
-phone.onmouseout=returnPhone;
-linked.onmouseover=changeLinked;
-linked.onmouseout=returnLinked;
-
 
 function showAbout()
 {
-	var window=document.getElementsByClassName('window');
-	window[0].style.display="block";
-}
-
-function showContact()
-{
-	var window=document.getElementsByClassName('window');
-	window[1].style.display="block";
-}
-
-function showProjects()
-{
-	var window=document.getElementsByClassName('window');
-	window[2].style.display="block";
+	windows[0].style.display="block";
 }
 
 function hideAbout()
 {
-	var window=document.getElementsByClassName('window');
-	window[0].style.display="none";
+	windows[0].style.display="none";
+}
+
+//Contact windows
+var contact=document.getElementById('contact');
+var contactFields=document.getElementsByClassName('contactFields')
+var contactImg=document.getElementsByClassName('contactImg');
+contactFields[0].onmouseover=changeMail;
+contactFields[0].onmouseout=returnMail;
+contactFields[1].onmouseover=changePhone;
+contactFields[1].onmouseout=returnPhone;
+contactFields[2].onmouseover=changeLinked;
+contactFields[2].onmouseout=returnLinked;
+contact.onclick=showContact;
+close[1].onclick=hideContact;
+
+function showContact()
+{
+	windows[1].style.display="block";
 }
 
 function hideContact()
 {
-	var window=document.getElementsByClassName('window');
-	window[1].style.display="none";
-}
-
-function hideProjects()
-{
-	var window=document.getElementsByClassName('window');
-	window[2].style.display="none";
+	windows[1].style.display="none";
 }
 
 function changeMail()
 {
-	var mail=document.getElementById('mailImg');
-	var mail1=document.getElementById('mail');
-	mail.style.transform="scale(1.05)";
-	mail1.style.backgroundColor="#E95420";
+	contactImg[0].style.transform="scale(1.05)";
+	contactFields[0].style.backgroundColor="#E95420";
 }
 
 function returnMail()
 {
-	var mail=document.getElementById('mailImg');
-	var mail1=document.getElementById('mail');
-	mail.style.transform="scale(1)";
-	mail1.style.backgroundColor="#F2F1F0";
+	contactImg[0].style.transform="scale(1)";
+	contactFields[0].style.backgroundColor="#F2F1F0";
 }
 
 function changePhone()
 {
-	var phone=document.getElementById('phoneImg');
-	var phone1=document.getElementById('phone');
-	phone.style.transform="scale(1.05)";
-	phone1.style.backgroundColor="#E95420";
+	contactImg[1].style.transform="scale(1.05)";
+	contactFields[1].style.backgroundColor="#E95420";
 }
 
 function returnPhone()
 {
-	var phone=document.getElementById('phoneImg');
-	var phone1=document.getElementById('phone');
-	phone.style.transform="scale(1)";
-	phone1.style.backgroundColor="#F2F1F0";
+	contactImg[1].style.transform="scale(1)";
+	contactFields[1].style.backgroundColor="#F2F1F0";
 }
 
 function changeLinked()
 {
-	var linked=document.getElementById('linkedImg');
-	var linked1=document.getElementById('linked');
-	linked.style.transform="scale(1.05)";
-	linked1.style.backgroundColor="#E95420";
+	contactImg[2].style.transform="scale(1.05)";
+	contactFields[2].style.backgroundColor="#E95420";
 }
 
 function returnLinked()
 {
-	var linked=document.getElementById('linkedImg');
-	var linked1=document.getElementById('linked');
-	linked.style.transform="scale(1)";
-	linked1.style.backgroundColor="#F2F1F0";
+	contactImg[2].style.transform="scale(1)";
+	contactFields[2].style.backgroundColor="#F2F1F0";
 }
 
-function showHungry()
+//Projects windows
+var menuField=document.getElementsByClassName('menuField');
+var game=document.getElementsByClassName("showMenuFields");
+var projects=document.getElementById('projects');
+projects.onclick=showProjects;
+game[0].onclick=showMenuField;
+close[2].onclick=hideProjects;
+
+function showProjects()
 {
-	var hungry=document.getElementById('hungry');
-	hungry.style.display="block";
-	hungry.style.webkitAnimation="slide-bottom 0.6s ease-in-out both";
-	hungry.style.animation="slide-bottom 0.6s ease-in-out both";
+	windows[2].style.display="block";
 }
-document.onkeydown = function(evt)
+
+function hideProjects()
 {
-		var window = document.getElementsByClassName('window');
-    evt = evt || window.event;
-    if (evt.keyCode == 27) {
-        window[0].style.display="none";
-				window[1].style.display="none";
-				window[2].style.display="none";
-    }
-};
+	windows[2].style.display="none";
+}
 
-
+function showMenuField()
+{
+	menuField[0].style.display="block";
+	menuField[0].style.webkitAnimation="slide-bottom 0.6s ease-in-out both";
+	menuField[0].style.animation="slide-bottom 0.6s ease-in-out both";
+}
 
 //Animacja
 $( "#logo" ).one( "click", function() {

@@ -202,32 +202,13 @@ table
 	margin: 5px 15% 0 0;
 }
 
-#content footer
+.contentAbout footer
 {
   width: 100%;
   margin-left: 15%;
   text-align: center;
   clear: both;
   position: absolute; bottom: 0;
-}
-
-#content footer button
-{
-  display: inline;
-	background-color: whitesmoke;
-	color: #585859;
-	padding: 10px;
-	border-radius: 8px;
-	margin: 10px;
-	box-shadow: none;
-  width: 150px;
-}
-
-#content footer button:hover
-{
-	background-color: #585859;
-	color: whitesmoke;
-	cursor: pointer;
 }
 
 .left
@@ -249,13 +230,13 @@ table
   display: block;
 }
 
-#content1
+.contentContact
 {
   text-align: center;
   box-sizing: border-box;
 }
 
-#content1 div
+.contentContact div
 {
   margin:auto;
   display: inline-block;
@@ -267,12 +248,12 @@ table
   height: 100%;
 }
 
-#content1 img
+.contentContact img
 {
   vertical-align: middle;
 }
 
-#content1 p
+.contentContact p
 {
   font-weight: 800;
   margin-top: 20px;
@@ -283,21 +264,22 @@ a
   color: black;
 }
 
-#content1 img
+.contentContact img
 {
   width:100%;
 }
 
 /* Projects */
-#content2
+.contentProjects
 {
   text-align: center;
   height: 100%;
   overflow-y: scroll;
 }
-#content2 div
+.contentProjects div
 {
   display: inline-block;
+  cursor: pointer;
   min-width: 200px;
   width: 90%;
   margin: 1%;
@@ -306,15 +288,35 @@ a
   color:white;
   border: 1px solid white;
   border-radius: 8px;
+  position: relative;
   z-index: 6;
 }
 
-#hungry
+.menuField
 {
   display: none;
-  background-color: white;
   width: 90%;
-  height: 30%;
+  height: 10%;
   margin: auto;
+  position: relative;
   z-index: 2;
+}
+
+.buttons
+{
+  display: inline;
+	background-color: whitesmoke;
+	color: #585859;
+	padding: 10px;
+	border-radius: 8px;
+	margin:  0 10px;
+	box-shadow: none;
+  width: 150px;
+}
+
+.buttons:hover
+{
+  background-color: #585859;
+  color: whitesmoke;
+  cursor: pointer;
 }
