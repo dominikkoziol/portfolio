@@ -1,4 +1,5 @@
 var windows=document.getElementsByClassName('window');
+var menuImg=document.getElementsByClassName('menuImg');
 var close=document.getElementsByClassName('close');
 
 {
@@ -14,8 +15,7 @@ var close=document.getElementsByClassName('close');
 }
 
 //About windows
-var about=document.getElementById('about');
-about.onclick=showAbout;
+menuImg[0].onclick=showAbout;
 close[0].onclick=hideAbout;
 
 function showAbout()
@@ -29,8 +29,7 @@ function hideAbout()
 }
 
 //Contact windows
-var contact=document.getElementById('contact');
-var contactFields=document.getElementsByClassName('contactFields')
+var contactFields=document.getElementsByClassName('contactFields');
 var contactImg=document.getElementsByClassName('contactImg');
 contactFields[0].onmouseover=changeMail;
 contactFields[0].onmouseout=returnMail;
@@ -38,7 +37,7 @@ contactFields[1].onmouseover=changePhone;
 contactFields[1].onmouseout=returnPhone;
 contactFields[2].onmouseover=changeLinked;
 contactFields[2].onmouseout=returnLinked;
-contact.onclick=showContact;
+menuImg[1].onclick=showContact;
 close[1].onclick=hideContact;
 
 function showContact()
@@ -89,11 +88,13 @@ function returnLinked()
 
 //Projects windows
 var menuField=document.getElementsByClassName('menuField');
-var game=document.getElementsByClassName("showMenuFields");
-var projects=document.getElementById('projects');
-projects.onclick=showProjects;
-game[0].onclick=showMenuField;
-close[2].onclick=hideProjects;
+var showMenuField=document.getElementsByClassName("showMenuFields");
+menuImg[2].onclick=showProjects;
+showMenuField[0].onclick=showRSP;
+showMenuField[1].onclick=showEsoteric;
+showMenuField[2].onclick=showWordpress;
+showMenuField[3].onclick=showIQ;
+close[2].onclick=hideProjects;	
 
 function showProjects()
 {
@@ -103,15 +104,37 @@ function showProjects()
 function hideProjects()
 {
 	windows[2].style.display="none";
+	menuField[0].style.display="none";
+	menuField[1].style.display="none";
 }
 
-function showMenuField()
+function showRSP()
 {
 	menuField[0].style.display="block";
 	menuField[0].style.webkitAnimation="slide-bottom 0.6s ease-in-out both";
 	menuField[0].style.animation="slide-bottom 0.6s ease-in-out both";
 }
 
+function showEsoteric()
+{
+	menuField[1].style.display="block";
+	menuField[1].style.webkitAnimation="slide-bottom 0.6s ease-in-out both";
+	menuField[1].style.animation="slide-bottom 0.6s ease-in-out both";
+}
+
+function showWordpress()
+{
+	menuField[2].style.display="block";
+	menuField[2].style.webkitAnimation="slide-bottom 0.6s ease-in-out both";
+	menuField[2].style.animation="slide-bottom 0.6s ease-in-out both";
+}
+
+function showIQ()
+{
+	menuField[3].style.display="block";
+	menuField[3].style.webkitAnimation="slide-bottom 0.6s ease-in-out both";
+	menuField[3].style.animation="slide-bottom 0.6s ease-in-out both";
+}
 //Animacja
 $( "#logo" ).one( "click", function() {
  	$("#header").animate({paddingTop: '2vh'});
